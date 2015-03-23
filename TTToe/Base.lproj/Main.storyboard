@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h21-o4-ekd">
+                                <rect key="frame" x="262" y="78" width="76" height="30"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uXy-KR-Prx"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1i-Cc-0gg">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeF-do-uql" customClass="TTTBoardView">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="HNb-BU-6fO"/>
+                                            <constraint firstAttribute="width" constant="100" id="Hag-Tv-taf"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="53h-1X-9Cg" customClass="TTTBoardView">
+                                        <rect key="frame" x="100" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ZZ-Ah-f5e" customClass="TTTBoardView">
+                                        <rect key="frame" x="200" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NRs-ks-F4F" customClass="TTTBoardView">
+                                        <rect key="frame" x="0.0" y="100" width="100" height="100"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="owG-jZ-11l" customClass="TTTBoardView">
+                                        <rect key="frame" x="200" y="100" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u6u-0P-i5f" customClass="TTTBoardView">
+                                        <rect key="frame" x="100" y="100" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ATz-j4-4FE" customClass="TTTBoardView">
+                                        <rect key="frame" x="0.0" y="200" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4f5-2O-w5D" customClass="TTTBoardView">
+                                        <rect key="frame" x="200" y="200" width="100" height="100"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5O4-xo-cDQ" customClass="TTTBoardView">
+                                        <rect key="frame" x="100" y="200" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="1XK-Co-xS5"/>
+                                    <constraint firstItem="BeF-do-uql" firstAttribute="leading" secondItem="N1i-Cc-0gg" secondAttribute="leading" id="1ni-ao-BmN"/>
+                                    <constraint firstItem="BeF-do-uql" firstAttribute="top" secondItem="N1i-Cc-0gg" secondAttribute="top" id="cj5-Co-bUX"/>
+                                    <constraint firstAttribute="width" constant="300" id="v9o-PG-6jb"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnp-fH-JcZ">
+                                <rect key="frame" x="279" y="458" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="y75-XP-hq2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="N1i-Cc-0gg" secondAttribute="centerY" id="8ze-2l-Zsj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pnp-fH-JcZ" secondAttribute="trailing" id="BL5-Qc-Swv"/>
+                            <constraint firstItem="N1i-Cc-0gg" firstAttribute="top" secondItem="h21-o4-ekd" secondAttribute="bottom" constant="10" id="DL8-aV-Jhb"/>
+                            <constraint firstItem="pnp-fH-JcZ" firstAttribute="top" secondItem="N1i-Cc-0gg" secondAttribute="bottom" constant="10" id="Zrc-97-uGk"/>
+                            <constraint firstAttribute="centerX" secondItem="N1i-Cc-0gg" secondAttribute="centerX" id="olk-Iu-Oz9"/>
+                            <constraint firstAttribute="centerX" secondItem="h21-o4-ekd" secondAttribute="centerX" id="xSv-dV-Rkg"/>
+                            <constraint firstItem="pnp-fH-JcZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="zur-4l-8lX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="pnp-fH-JcZ" id="Pgv-8D-7t5"/>
+                        <outlet property="oneOne" destination="u6u-0P-i5f" id="Q6b-MW-Xxq"/>
+                        <outlet property="oneTwo" destination="53h-1X-9Cg" id="uBL-Kw-C8U"/>
+                        <outlet property="oneZero" destination="5O4-xo-cDQ" id="HAF-G6-hGK"/>
+                        <outlet property="twoOne" destination="owG-jZ-11l" id="nxb-CV-lW9"/>
+                        <outlet property="twoTwo" destination="5ZZ-Ah-f5e" id="zaf-1N-Qhk"/>
+                        <outlet property="twoZero" destination="4f5-2O-w5D" id="knE-Eo-KOq"/>
+                        <outlet property="zeroOne" destination="NRs-ks-F4F" id="lXC-u1-Zs9"/>
+                        <outlet property="zeroTwo" destination="BeF-do-uql" id="EiQ-fu-GsH"/>
+                        <outlet property="zeroZero" destination="ATz-j4-4FE" id="9Sn-5H-7dv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
